@@ -5,6 +5,7 @@ import { Home } from './Pages/Home';
 import { HeaderApp } from './components/HeaderApp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Categorias } from './Pages/Categorias';
+import { NovaCategoria } from './Pages/NovaCategoria';
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/categorias' element={<Categorias />} />
+            <Route path='/nova-categoria' element={<NovaCategoria /> }/>
           </Routes>
         </BrowserRouter>
       </BaseProvider>
